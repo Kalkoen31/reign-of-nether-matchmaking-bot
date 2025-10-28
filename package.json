@@ -1,0 +1,11 @@
+{
+  "name": "matchmaker-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "node-fetch": "^3.3.2",
+    "dotenv": "^16.4.5"
+  }
+}

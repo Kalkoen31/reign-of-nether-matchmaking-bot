@@ -1,0 +1,13 @@
+[Unit]
+Description=reignofnetherbot
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/node /home/ubuntu/reignofnetherbot/index.js
+WorkingDirectory=/home/ubuntu/reignofnetherbot
+EnvironmentFile=/home/ubuntu/reignofnetherbot/.env
+Restart=always
+User=ubuntu
+
+[Install]
+WantedBy=multi-user.target
