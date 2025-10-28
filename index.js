@@ -10,7 +10,7 @@ const {
   PTERO_BASE,             // e.g., https://panel.example.com
   PTERO_CLIENT_TOKEN,     // Client API token
   PTERO_SERVER_ID,        // UUID short of the server
-  MATCH_DIR               // e.g., /srv/pterodactyl/volumes/<server-id>/match
+  MATCH_DIR               // e.g., /var/lib/pterodactyl/volumes/<server-id>/match
 } = process.env;
 
 const MAPS = ['Duality_2p', 'Oceanborn_2p', 'OutlawsRidge_2p', 'FusionDelta_2p', 'Berlingrad_v2_2p', '4Mountains_4p', '4Rivers_4p', 'CaelumInsula_KotH_4p', 'EssentialIsles_6p', 'Quicksand_6p']; // keep in sync with /maps/*.zip
@@ -253,5 +253,6 @@ client.on('interactionCreate', async (interaction) => {
     }
   }
 });
+
 
 client.login(DISCORD_TOKEN);
